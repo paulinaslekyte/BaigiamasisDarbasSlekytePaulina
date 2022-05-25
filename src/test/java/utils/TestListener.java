@@ -10,7 +10,6 @@ public class TestListener implements ITestListener {
             TakesScreenshot takesScreenshot = ((TakesScreenshot) Driver.getDriver());
             File screenshotRaw = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
-            // ./screenshots/screenshot-fkjdkfd-fdfdfd-fdfdfd-fdfd.png
             String directory = "./screenshots";
             File screenshotFile = new File(directory + "/screenshot-" + UUID.randomUUID() + ".png");
             FileUtils.copyFile(screenshotRaw, screenshotFile);
