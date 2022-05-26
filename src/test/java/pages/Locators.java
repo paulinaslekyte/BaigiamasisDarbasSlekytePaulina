@@ -17,7 +17,7 @@ public class Locators {
             public static By clickAboutUs = By.xpath("//*[@class='cms-page-link' and @href='https://zana.lt/turinys/about-us']");
             public static By titleAboutUs= By.xpath("//*[@class='news-inner__title']");
             public static By searchOption= By.xpath("//*[@id='search_query_top']");
-            public static By searchResults=By.xpath("//*[@class='searchString' and @name='search_query' and @value='Puodelis']");
+            public static By searchResults=By.xpath("//*[@id='search']//div[@class='products__item-title']//h3[contains(text(),'puodelis Kykyoto Ph')]");
         }
     }
 }

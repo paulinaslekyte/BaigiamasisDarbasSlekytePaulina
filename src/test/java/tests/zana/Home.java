@@ -25,16 +25,16 @@ public class Home extends BaseTest {
         Assert.assertEquals(actualMessage, expectedMessage);
 
     }
-}
 
-//    @Test
-//    public void search() {
+
+    @Test
+    public void search() {
 //        String expectedMessage = "Puodelis";
-//        pages.zana.Home.clickOnSearch();
-//        Common.sendKeysToElement(Locators.zana.home.searchOption, "Puodelis");
-//        Common.pressEnter(Locators.zana.home.searchOption);
-//        String message = Common.getElementText(Locators.zana.home.searchResults);
-//
-//        Assert.assertEquals(message,expectedMessage);
-//    }
-//}
+        pages.zana.Home.clickOnSearch();
+        Common.sendKeysToElement(Locators.zana.home.searchOption, "puodelis");
+        Common.pressEnter(Locators.zana.home.searchOption);
+        String actualMessage = Common.getElementText(Locators.zana.home.searchResults);
+
+        Assert.assertTrue(actualMessage.contains("puodelis"));
+    }
+}

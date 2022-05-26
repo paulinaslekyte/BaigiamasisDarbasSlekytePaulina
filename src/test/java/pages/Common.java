@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -95,6 +96,13 @@ public class Common {
         } else {
             return false;
         }
+
     }
+    public static void pressEnter(By locator) {
+        WebElement element=getElement(locator);
+        element.sendKeys(Keys.RETURN);
+
+    }
+
 }
 
