@@ -4,6 +4,8 @@
     <test name="Demo Tests">
         <classes>
             <class name="tests.zana.Home"/>
+            <class name="tests.zana.Login"/>
+            <class name="tests.zana.ChooseShop"/>
 
         </classes>
     </test>

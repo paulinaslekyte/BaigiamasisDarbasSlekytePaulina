@@ -49,5 +49,5 @@
 ### 5. Choose to show Vilnius shops
 ##### - Open https://zana.lt/parduotuves
 ##### - Choose "Vilnius" option from menu
-##### - Check if showed shops emails name contains word "vilnius"
+##### - Check if showd shops emails name contains word "vilnius"
 

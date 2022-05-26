@@ -8,35 +8,35 @@ public class Login {
         Common.openUrl("https://zana.lt/prisijungimas?back=my-account");
     }
     public static void clickForgotPassword() {
-        Common.clickElement(Locators.zana.login.buttonForgotPassword);
+        Common.clickElement(Locators.zana.Login.buttonForgotPassword);
     }
     public static void typeEmail() {
-        Common.sendKeysToElement(Locators.zana.login.emailFieldForForgotPassword,"miauroar@gmail.com");
+        Common.sendKeysToElement(Locators.zana.Login.emailFieldForForgotPassword,"miauroar@gmail.com");
     }
     public static void clickSendNewPassword() {
-        Common.clickElement(Locators.zana.login.buttonSendNewPassword);
+        Common.clickElement(Locators.zana.Login.buttonSendNewPassword);
 
     }
     public static String readStatusOfSentPassword() {
-        return Common.getElementText(Locators.zana.login.statusOfSentPassword);
+        return Common.getElementText(Locators.zana.Login.statusOfSentPassword);
     }
     public static void clickAcceptCookies() {
-        Common.clickElement(Locators.zana.login.cookiesEnable);
+        Common.clickElement(Locators.zana.Login.cookiesEnable);
     }
 
     public static void typeExistingEmail() {
-        Common.sendKeysToElement(Locators.zana.login.emailInput, "miauroar@gmail.com");
+        Common.sendKeysToElement(Locators.zana.Login.emailInput, "miauroar@gmail.com");
     }
 
     public static void typeExistingPassword() {
-        Common.sendKeysToElement(Locators.zana.login.passwordInput, "Testing123");
+        Common.sendKeysToElement(Locators.zana.Login.passwordInput, "Testing123");
     }
 
     public static void clickLoginButton() {
-        Common.clickElement(Locators.zana.login.loginButton);
+        Common.clickElement(Locators.zana.Login.loginButton);
     }
     public static String readMessage() {
-        return Common.getElementText(Locators.zana.login.logoutButton);
+        return Common.getElementText(Locators.zana.Login.logoutButton);
     }
 
 }
