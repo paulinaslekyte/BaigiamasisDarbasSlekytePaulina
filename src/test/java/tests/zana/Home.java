@@ -19,7 +19,7 @@ public class Home extends BaseTest {
         pages.zana.Home.open();
     }
 
-    @Test(priority = 1)
+    @Test
     public void aboutUs() {
         String expectedMessage = "Apie mus";
 
@@ -34,7 +34,7 @@ public class Home extends BaseTest {
         pages.zana.Home.open();
     }
 
-    @Test(priority = 2)
+    @Test
     public void search() {
         pages.zana.Home.clickOnSearch();
         pages.zana.Home.typeText();
@@ -43,7 +43,5 @@ public class Home extends BaseTest {
 
         Assert.assertTrue(actualMessage.contains("puodelis"));
     }
-
-
 }
 

@@ -12,7 +12,7 @@
 ### Pages used for testing
 1. [Home](https://zana.lt/)
 2. [Search](https://zana.lt/)
-3. [Get subscription](https://zana.lt/)
+3. [Forgot password](https://zana.lt/prisijungimas?back=my-account)
 4. [Login](https://zana.lt/prisijungimas?back=my-account)
 5. [Choose shop](https://zana.lt/parduotuves)
 
@@ -31,14 +31,12 @@
 ##### - Click enter
 ##### - Check if "Search" field contains word "puodelis"
 
-### 3. Get more information
-##### - Open  https://zana.lt/
-##### - Click on icon "Fill the form to get more information"
-##### - Type "Name" in name field
-##### - Type "miauroar@gmail.com" on email field
-##### - Type "Hello" in text field
-##### - Press "Send request" button
-##### - Check if request was send (for ex. "Your message was sent successfuly" text apearing)
+### 3. Forgot password
+##### - Open  Open https://zana.lt/prisijungimas?back=my-account
+##### - Click on "Forgot passwowrd" button
+##### - Type "miauroar@gmail.com" in email field
+##### - Click on "Send new password"
+##### - Check if new password was send (for ex. "Your new password sent to requested email" text apearing)
 
 
 ### 4. Login with existing user
