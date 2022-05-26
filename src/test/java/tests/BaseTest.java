@@ -1,5 +1,5 @@
 package tests;
-
+import org.testng.annotations.*;
 import utils.Driver;
 
 public class BaseTest {
@@ -13,4 +13,4 @@ public class BaseTest {
         Driver.closeDriver();
     }
 }
-}
+
