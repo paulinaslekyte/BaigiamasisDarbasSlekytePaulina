@@ -29,12 +29,21 @@ public class Home extends BaseTest {
 
     @Test
     public void search() {
-//        String expectedMessage = "Puodelis";
         pages.zana.Home.clickOnSearch();
         Common.sendKeysToElement(Locators.zana.home.searchOption, "puodelis");
         Common.pressEnter(Locators.zana.home.searchOption);
         String actualMessage = Common.getElementText(Locators.zana.home.searchResults);
 
         Assert.assertTrue(actualMessage.contains("puodelis"));
+    }
+
+    @Test
+    public void getSubscription() {
+        String message;
+        message = Common.sendKeysToElement(Locators.zana.home.emailField, "miauroar@gmail.com");
+        Common.clickElement(Locators.zana.home.confirmationButton);
+        Common.clickElement(Locators.zana.home.pressGetNotifications);
+
+        Assert.assertTrue(message.contains("@"));
     }
 }

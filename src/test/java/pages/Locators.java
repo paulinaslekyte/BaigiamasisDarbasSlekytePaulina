@@ -18,6 +18,9 @@ public class Locators {
             public static By titleAboutUs= By.xpath("//*[@class='news-inner__title']");
             public static By searchOption= By.xpath("//*[@id='search_query_top']");
             public static By searchResults=By.xpath("//*[@id='search']//div[@class='products__item-title']//h3[contains(text(),'puodelis Kykyoto Ph')]");
+            public static By emailField=By.xpath("//input[@class='mail' and @type='text' and @name='email']");
+            public static By confirmationButton=By.xpath("//label[@for='secondOption5']");
+            public static By pressGetNotifications= By.xpath("//button[@name='submitNewsletter']");
         }
     }
 }

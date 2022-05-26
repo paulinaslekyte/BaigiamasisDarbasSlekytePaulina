@@ -24,10 +24,10 @@
 ##### - Click on "Abouts" from head menu
 ##### - Check if title contains "Apie mus"
 
-### 2. Search for word "Puodelis"
+### 2. Search for word "puodelis"
 ##### - Open https://zana.lt/
 ##### - Click on "Search" field
-##### - Type "Puodelis"
+##### - Type "puodelis"
 ##### - Click enter
 ##### - Check if "Search" field contains word "puodelis"
 
@@ -36,7 +36,7 @@
 ##### - Type "miauroar@gmail.com" in email field
 ##### - Click confirm button
 ##### - Click on "Get" button
-##### - Check if "Serverio klaida" message appears
+##### - Check if email field contains "@"
 
 
 ### 4. Login with existing user

@@ -3,7 +3,7 @@
 <suite name="Testing Selenium Easy" parallel="methods" thread-count="1">
     <test name="Demo Tests">
         <classes>
-<!--            <class name="g">-->
+            <class name="tests.zana.Home"/>
 
         </classes>
     </test>
