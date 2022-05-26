@@ -9,13 +9,13 @@ public class Home {
         Common.openUrl("https://www.random.org/");
     }
     public static void clickWebTools() {
-        Common.clickElement(Locators.home.webTools);
+        Common.clickElement(Locators.randomorg.home.webTools);
     }
     public static void clickBannedHosts() {
-        Common.clickElement(Locators.home.bannedHosts);
+        Common.clickElement(Locators.randomorg.home.bannedHosts);
     }
 
     public static String readMessage() {
-        return Common.getElementText(Locators.home.listOfBannedHosts);
+        return Common.getElementText(Locators.randomorg.home.listOfBannedHosts);
     }
 }

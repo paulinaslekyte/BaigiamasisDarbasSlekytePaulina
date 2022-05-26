@@ -20,11 +20,15 @@ public class Home {
         Common.clickElement(Locators.zana.home.searchOption);
     }
 
-    public static String resultOfSearch() {
-        return Common.getElementText(Locators.zana.home.searchResults);
+    public static void typeText() {
+        Common.sendKeysToElement(Locators.zana.home.searchOption, "puodelis");
     }
 
-    public static String readSearcMessage() {
+    public static void preesEnter() {
+        Common.pressEnter(Locators.zana.home.searchOption);
+    }
+
+    public static String foundPuodelisInAnyProductName() {
         return Common.getElementText(Locators.zana.home.searchResults);
     }
 }

@@ -6,7 +6,11 @@ import org.testng.annotations.Test;
 import pages.Common;
 import pages.Locators;
 import tests.BaseTest;
-import utils.TestListener;
+
+// Pries kiekviena dejau BethoreMethod, nes man testai pasileidzia tik tada, jei po testo naujai
+// atsidariusia narsykle, isjungiu. Uztat reikia pries kiekviena testa det BethoreMethod, kad bendrai
+// paleisti klases Home tris testus
+
 
 public class Home extends BaseTest {
 
@@ -15,7 +19,7 @@ public class Home extends BaseTest {
         pages.zana.Home.open();
     }
 
-    @Test
+    @Test(priority = 1)
     public void aboutUs() {
         String expectedMessage = "Apie mus";
 
@@ -23,27 +27,23 @@ public class Home extends BaseTest {
         String actualMessage = pages.zana.Home.readMessageAboutUs();
 
         Assert.assertEquals(actualMessage, expectedMessage);
-
     }
 
+    @BeforeMethod
+    public void openPage() {
+        pages.zana.Home.open();
+    }
 
-    @Test
+    @Test(priority = 2)
     public void search() {
         pages.zana.Home.clickOnSearch();
-        Common.sendKeysToElement(Locators.zana.home.searchOption, "puodelis");
-        Common.pressEnter(Locators.zana.home.searchOption);
-        String actualMessage = Common.getElementText(Locators.zana.home.searchResults);
+        pages.zana.Home.typeText();
+        pages.zana.Home.preesEnter();
+        String actualMessage = pages.zana.Home.foundPuodelisInAnyProductName();
 
         Assert.assertTrue(actualMessage.contains("puodelis"));
     }
 
-    @Test
-    public void getSubscription() {
-        String message;
-        message = Common.sendKeysToElement(Locators.zana.home.emailField, "miauroar@gmail.com");
-        Common.clickElement(Locators.zana.home.confirmationButton);
-        Common.clickElement(Locators.zana.home.pressGetNotifications);
 
-        Assert.assertTrue(message.contains("@"));
-    }
 }
+
