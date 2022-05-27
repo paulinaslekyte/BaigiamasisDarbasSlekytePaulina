@@ -41,64 +41,11 @@ public class Common {
     public static String getElementText(By locator) {
         return getElement(locator).getText();
     }
-
-    public static void selectOptionByValue(By locator, String value) {
-        WebElement webElement = getElement(locator);
-        Select selectElement = new Select(webElement);
-        selectElement.selectByValue(value);
-    }
-
-    public static String getElementAttributeValue(By locator, String attributeName) {
-        return getElement(locator).getAttribute(attributeName);
-
-    }
-
-    public static List<Boolean> getSelectedStatusForCheckBoxesForLocator(By locator) {
-        List<WebElement> elements = pages.Common.getElements(locator);
-        List<Boolean> statusList = new ArrayList(Arrays.asList());
-
-        for (WebElement element : elements) {
-            statusList.add(element.isSelected());
-        }
-        return statusList;
-    }
-
-    public static void acceptAlert() {
-        Driver.getDriver().switchTo().alert().accept();
-    }
-
-    public static void dismissAlert() {
-        Driver.getDriver().switchTo().alert().dismiss();
-    }
-
-    public static boolean isAlertPresent() {
-        try {
-            Driver.getDriver().switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException ex) {
-            return false;
-
-        }
-    }
-
     public static void waitForElementToVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(6));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public static void sendKeysToAlert(String keys) {
-        Driver.getDriver().switchTo().alert().sendKeys(keys);
-    }
-
-    public static Boolean isElementPresent(By locator) {
-        List<WebElement> elements = getElements(locator);
-        if (elements.size() > 0) {
-            return true;
-        } else {
-            return false;
-        }
-
-    }
     public static void pressEnter(By locator) {
         WebElement element=getElement(locator);
         element.sendKeys(Keys.RETURN);

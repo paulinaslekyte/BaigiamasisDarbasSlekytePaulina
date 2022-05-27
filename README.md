@@ -15,6 +15,7 @@
 3. [Forgot password](https://zana.lt/prisijungimas?back=my-account)
 4. [Login](https://zana.lt/prisijungimas?back=my-account)
 5. [Choose shop](https://zana.lt/parduotuves)
+6. [Add to cart](https://zana.lt/lekstes)
 
 
 ## Tests used for pages testing
@@ -51,3 +52,13 @@
 ##### - Choose "Vilnius" option from menu
 ##### - Check if showd shops emails name contains word "vilnius"
 
+### 6.Add plate to the cart
+##### - Open https://zana.lt/lekstes
+##### - Click on first plate 
+##### - Click add to cart
+##### - Read message if plate was added successfuly
+##### - Check if opened box message contains added plate
+
+###### - ------------------------------------
+
+###### -project also contains another page, which was failed due failing to close the ddos protection 
