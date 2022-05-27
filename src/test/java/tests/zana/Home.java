@@ -17,6 +17,7 @@ public class Home extends BaseTest {
     @BeforeMethod
     public void openLink() {
         pages.zana.Home.open();
+        pages.zana.Home.acceptCookies();
     }
 
     @Test
@@ -27,11 +28,6 @@ public class Home extends BaseTest {
         String actualMessage = pages.zana.Home.readMessageAboutUs();
 
         Assert.assertEquals(actualMessage, expectedMessage);
-    }
-
-    @BeforeMethod
-    public void openPage() {
-        pages.zana.Home.open();
     }
 
     @Test

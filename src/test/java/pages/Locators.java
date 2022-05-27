@@ -14,6 +14,7 @@ public class Locators {
 
     public class zana {
         public class Home {
+            public static By cookiesEnable = By.xpath("//a[@class='cb-enable']");
             public static By clickAboutUs = By.xpath("//*[@class='cms-page-link' and @href='https://zana.lt/turinys/about-us']");
             public static By titleAboutUs = By.xpath("//*[@class='news-inner__title']");
             public static By searchOption = By.xpath("//*[@id='search_query_top']");
@@ -34,6 +35,7 @@ public class Locators {
         }
 
         public class ChooseShop {
+            public static By cookiesEnable = By.xpath("//a[@class='cb-enable']");
             public static By chooseVilnius = By.xpath("//*[@class='active' and @rel='tab1']/a[contains(text(),'Vilnius')]");
             public static By checkForVilnius1 = By.xpath("//*[@class='shopItem--data__mail']//a[contains(text(),'zana.vilnius@arkiete.lt')]");
             public static By checkForVilnius2 = By.xpath("//*[@class='shopItem--data__mail']//a[contains(text(),'zana.vilnius1@arkiete.lt')]");

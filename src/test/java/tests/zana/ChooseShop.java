@@ -9,6 +9,7 @@ public class ChooseShop extends BaseTest {
     @BeforeMethod
     public void openLink() {
         pages.zana.ChooseShop.open();
+        pages.zana.ChooseShop.clickAcceptCookies();
     }
 
     @Test

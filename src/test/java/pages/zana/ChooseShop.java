@@ -7,6 +7,9 @@ public class ChooseShop {
     public static void open() {
         Common.openUrl("https://zana.lt/parduotuves");
     }
+    public static void clickAcceptCookies() {
+        Common.clickElement(Locators.zana.ChooseShop.cookiesEnable);
+    }
     public static void clickOnVilnius() {
         Common.clickElement(Locators.zana.ChooseShop.chooseVilnius);
     }
@@ -27,4 +30,5 @@ public class ChooseShop {
 
     public static String readEmail5() {
     return Common.getElementText(Locators.zana.ChooseShop.checkForVilnius5);}
+
 }

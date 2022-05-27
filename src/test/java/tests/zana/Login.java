@@ -12,6 +12,7 @@ public class Login extends BaseTest {
     @BeforeMethod
     public void openUrl() {
         pages.zana.Login.open();
+        pages.zana.Login.clickAcceptCookies();
     }
 
     @Test
@@ -24,23 +25,14 @@ public class Login extends BaseTest {
         Assert.assertTrue(message.contains("miauroar@gmail.com"));
     }
 
-    @BeforeMethod
-    public void openLink() {
-        pages.zana.Login.open();
-    }
-
     @Test
     public void loginWithValidData() {
-        pages.zana.Login.clickAcceptCookies();
         pages.zana.Login.typeExistingEmail();
         pages.zana.Login.typeExistingPassword();
         pages.zana.Login.clickLoginButton();
         String message = pages.zana.Login.readMessage();
 
         Assert.assertTrue(message.contains("Atsijungti"));
-
-
-
 
     }
 }

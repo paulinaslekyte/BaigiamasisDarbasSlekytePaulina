@@ -7,6 +7,9 @@ public class Home {
     public static void open() {
         Common.openUrl("https://zana.lt/");
     }
+    public static void acceptCookies() {
+        Common.clickElement(Locators.zana.Home.cookiesEnable);
+    }
 
     public static void clickAboutUs() {
         Common.clickElement(Locators.zana.Home.clickAboutUs);
@@ -31,4 +34,5 @@ public class Home {
     public static String foundPuodelisInAnyProductName() {
         return Common.getElementText(Locators.zana.Home.searchResults);
     }
+
 }
