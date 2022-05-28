@@ -33,8 +33,7 @@ public class Home extends BaseTest {
     @Test
     public void search() {
         pages.zana.Home.clickOnSearch();
-        pages.zana.Home.typeText();
-        pages.zana.Home.preesEnter();
+        pages.zana.Home.typeTextAndPressEnter();
         String actualMessage = pages.zana.Home.foundPuodelisInAnyProductName();
 
         Assert.assertTrue(actualMessage.contains("puodelis"));

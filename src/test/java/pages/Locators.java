@@ -49,6 +49,9 @@ public class Locators {
             public static By addPlate= By.xpath("//a[@href='https://zana.lt/stalo-serviravimo-indai/lekste-zalsva-easy-life-drops-21cm' and @class='products__item-inner']");
             public static By addToCart= By.xpath("//*[@id='modalOpen']");
             public static By plateAddedMessage= By.xpath("//*[@class='statusMessage success']//p[contains(text(),'Prekė sėkmingai pridėta į krepšelį')]");
+            public static By continueShopping = By.xpath("//*[@id='continue']");
+            public static By buttonCart= By.xpath("//*[@id='_desktop_cart']");
+            public static By cartContains1Plate= By.xpath("//*[@class='cart_total_items']");
         }
     }
 }

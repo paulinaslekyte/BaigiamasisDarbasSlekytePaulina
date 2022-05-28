@@ -23,4 +23,16 @@ public class Cart {
     public static String readStatusMessage() {
        return Common.getElementText(Locators.zana.Cart.plateAddedMessage);
     }
+
+    public static void continueShopping() {
+        Common.clickElement(Locators.zana.Cart.continueShopping);
+    }
+
+    public static void clickOnCart() {
+        Common.clickElement(Locators.zana.Cart.buttonCart);
+    }
+
+    public static String readCartMessage() {
+        return Common.getElementText(Locators.zana.Cart.cartContains1Plate);
+    }
 }

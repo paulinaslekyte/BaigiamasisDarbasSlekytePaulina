@@ -23,11 +23,8 @@ public class Home {
         Common.clickElement(Locators.zana.Home.searchOption);
     }
 
-    public static void typeText() {
+    public static void typeTextAndPressEnter() {
         Common.sendKeysToElement(Locators.zana.Home.searchOption, "puodelis");
-    }
-
-    public static void preesEnter() {
         Common.pressEnter(Locators.zana.Home.searchOption);
     }
 

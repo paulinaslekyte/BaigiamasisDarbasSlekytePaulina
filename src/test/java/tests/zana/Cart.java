@@ -13,12 +13,19 @@ public class Cart extends BaseTest {
     }
 
     @Test
-    public void addToCart() {
+    public void addToCartAndCheck() {
         String expectedMessage = "Prekė sėkmingai pridėta į krepšelį";
         pages.zana.Cart.chooseFirstPlate();
         pages.zana.Cart.addPlateToCart();
         String actualMessage = pages.zana.Cart.readStatusMessage();
 
         Assert.assertEquals(actualMessage, expectedMessage);
+
+        pages.zana.Cart.continueShopping();
+        pages.zana.Cart.clickOnCart();
+        expectedMessage = "1 prekė";
+        actualMessage = pages.zana.Cart.readCartMessage();
+
+        Assert.assertEquals(actualMessage,expectedMessage);
     }
 }

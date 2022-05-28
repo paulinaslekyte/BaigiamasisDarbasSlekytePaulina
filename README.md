@@ -21,43 +21,46 @@
 ## Tests used for pages testing
 
 ### - 1.Choose "About Us" from menu
-##### - Open https://zana.lt/
-##### - Click on "Abouts" from head menu
-##### - Check if title contains "Apie mus"
+- Open https://zana.lt/
+- Click on "Abouts" from head menu
+- Check if title contains "Apie mus"
 
 ### 2. Search for word "puodelis"
-##### - Open https://zana.lt/
-##### - Click on "Search" field
-##### - Type "puodelis"
-##### - Click enter
-##### - Check if "Search" field contains word "puodelis"
+- Open https://zana.lt/
+- Click on "Search" field
+- Type "puodelis"
+- Click enter
+- Check if first product contains word "puodelis"
 
 ### 3. Forgot password
-##### - Open  Open https://zana.lt/prisijungimas?back=my-account
-##### - Click on "Forgot passwowrd" button
-##### - Type "miauroar@gmail.com" in email field
-##### - Click on "Send new password"
-##### - Check if new password was send (for ex. "Your new password sent to requested email" text apearing)
+- Open  Open https://zana.lt/prisijungimas?back=my-account
+- Click on "Forgot password" button
+- Type "miauroar@gmail.com" in email field
+- Click on "Send new password"
+- Check if new password was sent (for ex. "Your new password sent to requested email" text apearing)
 
 
 ### 4. Login with existing user
-##### - Open https://zana.lt/prisijungimas?back=my-account
-##### - Type "miauroar@gmail.com" in email field
-##### - Type "Testing123" in password field
-##### - Click  "Login" button
-##### - Check if "Logout" function appeared
+- Open https://zana.lt/prisijungimas?back=my-account
+- Type "miauroar@gmail.com" in email field
+- Type "Testing123" in password field
+- Click  "Login" button
+- Check if "Logout" function appeared
 
 ### 5. Choose to show Vilnius shops
-##### - Open https://zana.lt/parduotuves
-##### - Choose "Vilnius" option from menu
-##### - Check if showd shops emails name contains word "vilnius"
+- Open https://zana.lt/parduotuves
+- Choose "Vilnius" option from menu
+- Check if shown shops emails name contains word "vilnius"
 
 ### 6.Add plate to the cart
-##### - Open https://zana.lt/lekstes
-##### - Click on first plate 
-##### - Click add to cart
-##### - Read message if plate was added successfuly
-##### - Check if opened box message contains added plate
+- Open https://zana.lt/lekstes
+- Click on first plate 
+- Click add 1 plate to the cart
+- Read message if plate was added successfully
+- Check if opened box message contains added plate
+- Click "Continue shopping"
+- Click on cart
+- Check if cart contains 1 plate
 
 ###### - ------------------------------------
 
