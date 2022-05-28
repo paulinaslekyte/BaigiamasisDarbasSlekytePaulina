@@ -20,7 +20,7 @@
 
 ## Tests used for pages testing
 
-### - 1.Choose "About Us" from menu
+### 1.Choose "About Us" from menu
 - Open https://zana.lt/
 - Click on "Abouts" from head menu
 - Check if title contains "Apie mus"
@@ -62,6 +62,6 @@
 - Click on cart
 - Check if cart contains 1 plate
 
-###### - ------------------------------------
+##### ---------------------------------------------------------------------------------------
 
-###### -project also contains another page, which was failed due failing to close the ddos protection 
+###### project also contains another page, which was failed due failing to close the ddos protection 
