@@ -32,7 +32,7 @@ public class Cart {
         Common.clickElement(Locators.zana.Cart.buttonCart);
     }
 
-    public static String readCartMessage() {
+    public static String readCartMessage(){
         return Common.getElementText(Locators.zana.Cart.cartContains1Plate);
     }
 }

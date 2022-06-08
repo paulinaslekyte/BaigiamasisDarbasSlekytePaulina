@@ -12,16 +12,7 @@ public class Driver {
     public static void setDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("disable-blink-features=AutomationControlled");
-//        options.addArguments("enable-automation");
-//        options.addArguments("--no-sandbox");
         options.addArguments("start-maximized");
-//        options.addArguments("--disable-infobars");
-//        options.addArguments("--disable-dev-shm-usage");
-//        options.addArguments("--disable-browser-side-navigation");
-//        options.addArguments("--remote-debugging-port=9222");
-//        options.addArguments("--disable-gpu");
-//        options.addArguments("headless");
         driver.set(new ChromeDriver(options));
         driver.get().manage().timeouts().implicitlyWait(Constants.TIMEOUT);
 
